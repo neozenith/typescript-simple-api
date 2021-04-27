@@ -14,8 +14,8 @@ export function cleanQueryInput(input:any): number[] {
   if (input !== undefined) {
     if (typeof input == 'string') {
       const temp = input.split(',');
-      for (const x in temp){
-        if (Number(x) !== NaN) {
+      for (const x of temp){
+        if (x.length > 0 && Number(x) !== NaN) {
           output.push(Number(x));
         }
       }
