@@ -18,6 +18,12 @@ npm start
 npm test
 ```
 
+# Testing Deployment
+
+```
+npm run test:heroku
+```
+
 # Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
