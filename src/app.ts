@@ -15,7 +15,7 @@ app.get( "/", ( req, res ) => {
 
 export async function startServer(): Promise<http.Server> {
     return app.listen( port, () => {
-        console.log( `server started at http://localhost:${ port }` );
+        if (process.env.NODE_ENV !== 'test') console.log( `server started at http://localhost:${ port }` );
     } );
 }
 
