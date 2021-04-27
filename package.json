@@ -1,0 +1,36 @@
+{
+  "name": "typescript-simple-api",
+  "version": "1.0.0",
+  "description": "Simple Typescript Express API deployed to heroku",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rfv dist/",
+    "build": "tsc",
+    "start": "npm run build && node dist/app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neozenith/typescript-simple-api.git"
+  },
+  "author": "Josh Peak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neozenith/typescript-simple-api/issues"
+  },
+  "homepage": "https://github.com/neozenith/typescript-simple-api#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.0",
+    "@types/supertest": "^2.0.11",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

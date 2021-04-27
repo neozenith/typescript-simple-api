@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "incremental": true,                         
+    "target": "es2020",                                
+    "module": "commonjs",                           
+    "declaration": true,                         
+    "declarationMap": true,                      
+    "sourceMap": true,                           
+    "outDir": "dist",                              
+    "tsBuildInfoFile": "./dist/ts-build-info-cache",                     
+    "strict": true,                                 
+    "alwaysStrict": true,
+    "moduleResolution": "node",                  
+    "allowSyntheticDefaultImports": true,        
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true,
+    "types":["node","jest"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
