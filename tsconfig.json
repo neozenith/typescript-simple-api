@@ -10,6 +10,8 @@
     "tsBuildInfoFile": "./dist/ts-build-info-cache",                     
     "strict": true,                                 
     "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "moduleResolution": "node",                  
     "allowSyntheticDefaultImports": true,        
     "esModuleInterop": true,                        
